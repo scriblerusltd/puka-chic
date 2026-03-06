@@ -240,8 +240,8 @@ export default function Home() {
                   <Image
                     src="/images/puka1.jpg"
                     alt="Puka shells on the beach"
-                    width={600}
-                    height={400}
+                    width={1200}
+                    height={800}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
@@ -249,8 +249,8 @@ export default function Home() {
                   <Image
                     src="/images/puka2.jpg"
                     alt="Tropical beach with palm trees"
-                    width={600}
-                    height={400}
+                    width={1200}
+                    height={800}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
@@ -258,8 +258,17 @@ export default function Home() {
                   <Image
                     src="/images/puka3.jpg"
                     alt="Colorful tie-dye textiles"
-                    width={600}
-                    height={400}
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden col-span-2">
+                  <Image
+                    src="/images/puka4.png"
+                    alt="Surfer with board"
+                    width={1200}
+                    height={1600}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
@@ -296,6 +305,15 @@ export default function Home() {
                     alt="Fashion editorial"
                     width={1200}
                     height={800}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden col-span-2">
+                  <Image
+                    src="/images/chic4.png"
+                    alt="Black tie evening"
+                    width={1200}
+                    height={1200}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
