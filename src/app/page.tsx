@@ -227,10 +227,7 @@ export default function Home() {
           <h3 className="text-2xl font-bold tracking-tight text-center mb-2">
             Wondering what is PUKA and what is CHIC?
           </h3>
-          <p className="text-sm text-black/50 text-center mb-12 max-w-lg mx-auto">
-            It&apos;s a vibe. A spectrum. Every brand falls somewhere between
-            the two. Here&apos;s what we mean.
-          </p>
+          <div className="mb-12" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* PUKA side */}
