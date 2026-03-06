@@ -239,31 +239,31 @@ export default function Home() {
                 PUKA
               </h4>
               <div className="grid grid-cols-2 gap-3">
-                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden">
                   <Image
                     src="/images/puka1.jpg"
                     alt="Puka shells on the beach"
                     width={600}
                     height={400}
-                    className="object-cover w-full h-full"
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
-                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden">
                   <Image
                     src="/images/puka2.jpg"
                     alt="Tropical beach with palm trees"
                     width={600}
                     height={400}
-                    className="object-cover w-full h-full"
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
-                <div className="aspect-[3/2] rounded-lg overflow-hidden col-span-2">
+                <div className="rounded-lg overflow-hidden col-span-2">
                   <Image
                     src="/images/puka3.jpg"
                     alt="Colorful tie-dye textiles"
                     width={600}
                     height={400}
-                    className="object-cover w-full h-full"
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
@@ -275,31 +275,31 @@ export default function Home() {
                 CHIC
               </h4>
               <div className="grid grid-cols-2 gap-3">
-                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden">
                   <Image
                     src="/images/chic1.png"
                     alt="Prada runway look"
                     width={600}
-                    height={400}
-                    className="object-cover w-full h-full"
+                    height={800}
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
-                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                <div className="rounded-lg overflow-hidden">
                   <Image
                     src="/images/chic2.png"
                     alt="Balenciaga architectural silhouette"
                     width={600}
-                    height={400}
-                    className="object-cover w-full h-full"
+                    height={800}
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
-                <div className="aspect-[3/2] rounded-lg overflow-hidden col-span-2">
+                <div className="rounded-lg overflow-hidden col-span-2">
                   <Image
                     src="/images/chic3.png"
                     alt="Fashion editorial"
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-full"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
