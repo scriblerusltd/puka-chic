@@ -106,7 +106,7 @@ export default function Home() {
               ? "Average placements from all voters"
               : allPlaced
                 ? "All placed. Submit your votes."
-                : "Drag each logo onto the spectrum."}
+                : "Drag each company onto the spectrum."}
           </p>
         </div>
 
