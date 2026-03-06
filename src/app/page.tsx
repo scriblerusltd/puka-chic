@@ -12,8 +12,8 @@ interface Company {
 const COMPANIES: Company[] = [
   { id: "every", name: "Every", logo: "/logos/every.svg" },
   { id: "base-power", name: "Base Power", logo: "/logos/base-power.svg" },
-  { id: "cursor", name: "Cursor", logo: "/logos/cursor.svg" },
-  { id: "raycast", name: "Raycast", logo: "/logos/raycast.svg" },
+  { id: "cursor", name: "Cursor", logo: "/logos/cursor.png" },
+  { id: "raycast", name: "Raycast", logo: "/logos/raycast.png" },
   { id: "macro", name: "Macro", logo: "/logos/macro.svg" },
   { id: "midjourney", name: "Midjourney", logo: "/logos/midjourney.svg" },
   { id: "sandbar", name: "Sandbar", logo: "/logos/sandbar.svg" },
