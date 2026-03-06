@@ -1,4 +1,3 @@
-import { kv } from "@vercel/kv";
 import { NextResponse } from "next/server";
 
 interface VoteData {
@@ -23,11 +22,37 @@ const COMPANIES = [
   "thru",
 ];
 
+// Try to use Vercel KV if available, otherwise fall back to in-memory
+let kv: typeof import("@vercel/kv").kv | null = null;
+try {
+  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+    kv = (await import("@vercel/kv")).kv;
+  }
+} catch {
+  // KV not configured
+}
+
+// In-memory fallback (resets on cold start, but works without KV)
+const memoryStore = new Map<string, VoteData>();
+
+async function getData(key: string): Promise<VoteData | null> {
+  if (kv) return kv.get<VoteData>(key);
+  return memoryStore.get(key) ?? null;
+}
+
+async function setData(key: string, value: VoteData): Promise<void> {
+  if (kv) {
+    await kv.set(key, value);
+  } else {
+    memoryStore.set(key, value);
+  }
+}
+
 export async function GET() {
   try {
     const results: Record<string, { averageX: number; count: number }> = {};
     for (const company of COMPANIES) {
-      const data = await kv.get<VoteData>(`votes:${company}`);
+      const data = await getData(`votes:${company}`);
       if (data) {
         results[company] = {
           averageX: data.totalX / data.count,
@@ -50,12 +75,12 @@ export async function POST(request: Request) {
       if (!COMPANIES.includes(company)) continue;
       if (typeof x !== "number" || x < 0 || x > 1) continue;
 
-      const existing = await kv.get<VoteData>(`votes:${company}`);
+      const existing = await getData(`votes:${company}`);
       const updated: VoteData = existing
         ? { totalX: existing.totalX + x, count: existing.count + 1 }
         : { totalX: x, count: 1 };
 
-      await kv.set(`votes:${company}`, updated);
+      await setData(`votes:${company}`, updated);
     }
 
     return NextResponse.json({ success: true });
