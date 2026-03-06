@@ -221,6 +221,103 @@ export default function Home() {
         )}
       </div>
 
+      {/* Explainer Section */}
+      <section className="border-t border-black/10 px-6 py-16">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="text-2xl font-bold tracking-tight text-center mb-2">
+            Wondering what is PUKA and what is CHIC?
+          </h3>
+          <p className="text-sm text-black/50 text-center mb-12 max-w-lg mx-auto">
+            It&apos;s a vibe. A spectrum. Every brand falls somewhere between
+            the two. Here&apos;s what we mean.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* PUKA side */}
+            <div>
+              <h4 className="text-lg font-bold tracking-[0.15em] uppercase mb-4">
+                PUKA
+              </h4>
+              <p className="text-sm text-black/50 mb-6">
+                Sun-bleached. Shell necklaces. Tie-dye everything. Your brand
+                smells like sunscreen and campfire smoke. You probably have a
+                van.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/puka1.jpg"
+                    alt="Surfer riding a wave"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/puka2.jpg"
+                    alt="Tropical beach with palm trees"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="aspect-[3/2] rounded-lg overflow-hidden col-span-2">
+                  <Image
+                    src="/images/puka3.jpg"
+                    alt="Colorful tie-dye textiles"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* CHIC side */}
+            <div>
+              <h4 className="text-lg font-bold tracking-[0.15em] uppercase mb-4">
+                CHIC
+              </h4>
+              <p className="text-sm text-black/50 mb-6">
+                Runway-ready. Dark palettes. Architectural silhouettes. Your
+                brand has a fragrance and it&apos;s not patchouli. Think Prada,
+                Balenciaga, a fashion film.
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/chic1.jpg"
+                    alt="Man buttoning a dark suit"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="aspect-[3/2] rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/chic2.jpg"
+                    alt="Black leather outfit with bold jewelry"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className="aspect-[3/2] rounded-lg overflow-hidden col-span-2">
+                  <Image
+                    src="/images/chic3.jpg"
+                    alt="Runway model in black gown"
+                    width={600}
+                    height={400}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="px-6 py-4 border-t border-black/10 text-center">
         <span className="text-xs text-black/30">
