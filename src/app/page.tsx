@@ -91,7 +91,7 @@ export default function Home() {
       {/* Header */}
       <header className="px-6 py-5 border-b border-black/10">
         <h1 className="text-xs font-bold tracking-[0.3em] uppercase">
-          Afterimage Projects
+          Afterimage
         </h1>
       </header>
 
