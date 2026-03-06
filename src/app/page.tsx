@@ -15,7 +15,7 @@ const COMPANIES: Company[] = [
   { id: "cursor", name: "Cursor", logo: "/logos/cursor.png" },
   { id: "raycast", name: "Raycast", logo: "/logos/raycast.png" },
   { id: "macro", name: "Macro", logo: "/logos/macro.svg" },
-  { id: "midjourney", name: "Midjourney", logo: "/logos/midjourney.svg" },
+  { id: "midjourney", name: "Midjourney", logo: "/logos/midjourney.png" },
   { id: "sandbar", name: "Sandbar", logo: "/logos/sandbar.svg" },
   { id: "infinite-machine", name: "Infinite Machine", logo: "/logos/infinite-machine.svg" },
   { id: "opal", name: "Opal", logo: "/logos/opal.svg" },
