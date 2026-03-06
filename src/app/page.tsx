@@ -238,16 +238,11 @@ export default function Home() {
               <h4 className="text-lg font-bold tracking-[0.15em] uppercase mb-4">
                 PUKA
               </h4>
-              <p className="text-sm text-black/50 mb-6">
-                Sun-bleached. Shell necklaces. Tie-dye everything. Your brand
-                smells like sunscreen and campfire smoke. You probably have a
-                van.
-              </p>
               <div className="grid grid-cols-2 gap-3">
                 <div className="aspect-[3/2] rounded-lg overflow-hidden">
                   <Image
                     src="/images/puka1.jpg"
-                    alt="Surfer riding a wave"
+                    alt="Puka shells on the beach"
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
@@ -279,16 +274,11 @@ export default function Home() {
               <h4 className="text-lg font-bold tracking-[0.15em] uppercase mb-4">
                 CHIC
               </h4>
-              <p className="text-sm text-black/50 mb-6">
-                Runway-ready. Dark palettes. Architectural silhouettes. Your
-                brand has a fragrance and it&apos;s not patchouli. Think Prada,
-                Balenciaga, a fashion film.
-              </p>
               <div className="grid grid-cols-2 gap-3">
                 <div className="aspect-[3/2] rounded-lg overflow-hidden">
                   <Image
-                    src="/images/chic1.jpg"
-                    alt="Man buttoning a dark suit"
+                    src="/images/chic1.png"
+                    alt="Prada runway look"
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
@@ -296,8 +286,8 @@ export default function Home() {
                 </div>
                 <div className="aspect-[3/2] rounded-lg overflow-hidden">
                   <Image
-                    src="/images/chic2.jpg"
-                    alt="Black leather outfit with bold jewelry"
+                    src="/images/chic2.png"
+                    alt="Balenciaga architectural silhouette"
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
@@ -305,8 +295,8 @@ export default function Home() {
                 </div>
                 <div className="aspect-[3/2] rounded-lg overflow-hidden col-span-2">
                   <Image
-                    src="/images/chic3.jpg"
-                    alt="Runway model in black gown"
+                    src="/images/chic3.png"
+                    alt="Fashion editorial"
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
